@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+
+nav a{
+    color: black !important;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.camaras-cam{
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    font-family: Roboto;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+
+/* HEADER */
+nav{
+    font-size: 20px;
+}
+
+.logo{
+    width: 100px;
+    transform: scale(1.6);
+}
+
+.navbar-expand-lg .navbar-collapse{
+    justify-content: end;
+    padding-right: 20px;
+}
+
+.cont-nav{
+    padding: 0 40px !important;
+}
+
+.navbar-nav{
+    gap: 20px;
+}
+
+/* MAIN */
+
+.contenedor-principal{
+    width: 100vw;
+    background: rgb(228, 228, 228);
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.camaras{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+
+.cam{
+    width: 400px;
+    background: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-overflow: ellipsis;
+    gap: 10px;
+    transition: all .5s;
+    border-radius: 10px 10px 0 0;
+}
+
+.cam h3{
+    font-size: 18px;
+}
+
+.video-camara{
+    background: black;
+    height: 200px;
+    width: 378px;
+}
+
+video{
+    height: 100% !important;
+    width: 100% !important;
+}
+
+
+.video-vivo{
+    width: 100%;
+    height: 100%;
+}
+
+.info-cam{
+    align-self: flex-start;
+}
+
+
+.ingresar{
+    align-self: flex-start;
+    padding: 9px !important;
+    background-color: #fa921c !important;
+    border: none !important;
+    color: black !important;
+}
+
+.lista-desordenada{
+    padding-left: 10px !important;
+}
+
+.contenedor-alerta{
+    width: 100%;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.icono-alerta{
+    border: none;
+    color: red;
+    font-size: 30px;
+    background: none;
+}
+
+
+/* NOTICIAS */
+.noticias{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+}
+
+.img-barrio{
+    width: 100%;
+}
+
+.todas-noticias{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.todas-noticias article{
+    width: 30%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+/* CONTACTO */
+.contenedor-contacto{
+    width: 100%;
+    background-color: rgb(228, 228, 228);
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.titulo-contacto{
+    font-size: 35px;
+}
+
+
+.contacto{
+    padding: 30px 40px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    border-radius: 10px;
+    gap: 35px;
+}
+
+.icono{
+    font-size: 50px;
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    gap: 5px;
+}
+
+.formulario label{
+    font-size: 18px;
+}
+
+.formulario input, .formulario textarea{
+    width: 100%;
+    background-color: rgb(207, 207, 219);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: none;
+    padding: 15px;
+    height: 45px;
+}
+
+.formulario input:focus, .formulario textarea:focus{
+    outline: none;
+    background-color: rgb(182, 182, 204);;
+}
+
+.formulario textarea{
+    height: 200px;
+}
+
+.formulario input[type=number]::-webkit-inner-spin-button, 
+.formulario input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.enviar-form{
+    height: 40px;
+    width: 150px;
+}
+
+
+
+/* FOOTER */
+
+
+footer{
+    background-color: black;
+    color: white;
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+footer p{
+    margin: 0;
+}
+
+.navbar-toggler{
+    border: black solid 2px !important;
+}
+
+@media (max-width:890px){
+    
+    .camaras{
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+    }
+
+    .video-camara{
+        min-width: 335px;
+        min-height: 200px;
+    }
+
+    .cam{
+        flex-direction: row;
+        width: 100%;
+        border-radius: 0 20px 0 20px;
+    }
+
+    .info-cam{
+        width: 100%;
+    }
+
+    .contenedor-alerta{
+        height: 200px;
+        padding-right: 10px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: end;
+        align-items: end;
+        gap: 20px;
+    }
+    
+    .ingresar{
+        align-self: flex-end;
+    }
+
+
+
+    /* FORMULARIO */
+    .contacto{
+        width: 80%;
+    }
+
+}
+
+
+
+@media (max-width:620px){
+
+    
+    .cont-nav{
+        padding: 0 10px !important;
+    }
+    
+    .camaras{
+        width: 100%;
+        max-width: 350px;
+        align-items: start;
+        justify-content: start;
+    }
+    
+    .cam{   
+        flex-direction: column;
+        border-radius: 5px 5px 5px 5px ;
+    }
+
+    .video-camara{
+        width: 100%;
+        height: 180px;
+        min-width: auto;
+        min-height: auto;
+    }
+
+    .contenedor-alerta{
+        height: auto;
+        justify-content: space-between;
+    }
+
+
+
+
+    /* NOTICIAS */
+
+    .img-barrio{
+        width: 100%;
+    }
+
+    .todas-noticias{
+        gap: 20px;
+    }
+
+    .todas-noticias article{
+        width: 100%;
+    }
+
+    .todas-noticias article img{
+        order: 0;
+    }
+
+    .todas-noticias article p{
+        margin-top: 15px;
+        order: 1;
+    }
+
+
+
+    /* FORMULARIO */
+    .contacto{
+        background-color: rgb(228, 228, 228);
+        width: 100%;
+        padding: 30px 20px;
+    }
+
+    .formulario input, .formulario textarea{
+        background-color: rgb(255, 255, 255);
+        border: none;
+    }
+    
+    .formulario input:focus, .formulario textarea:focus{
+        outline: none;
+        background-color: rgb(248, 248, 248);;
+    }
+}
+
+
+
+
+@keyframes efectopeligro{
+    0%{
+        border: none;
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(1.06);
+        border: red 1px solid;
+    }
+
+    100%{
+        transform: scale(1);
+        border: none;
+    }
+}
+.efectopeligro {
+    animation: efectopeligro 1s infinite;
+  }
+  

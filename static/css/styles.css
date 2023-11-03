@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: Roboto;
+}
+
+
+/* HEADER */
+
+nav{
+    background-color: #83816c;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contenedor-logo{
+    width: 100px;
+}
+
+.logo{
+    width: 100%;
+    transform: scale(1.5);
+    transition: all 0.5s;
+}
+
+.logo:hover{
+    transform: scale(1.9);
+}
+
+
+.lista-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 6vw;
+    margin: 0;
+}
+
+.lista-nav a{
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    transition: all .2s;
+}
+
+.lista-nav a:hover{
+    color: white;
+    font-size: 20px;
+}
+
+
+
+/* MAIN */
+main{
+    background-color: #deddc4;
+}
+
+
+.carrusel{
+    height: 65vh;
+    overflow: hidden;
+    background-color: black;
+}
+
+.carrusel img{
+    opacity: .7;
+}
+
+/* CARTAS */
+
+
+.contenedor-cartas{
+    background-color: rgb(236, 236, 236);
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 80px 30px;
+    gap: 10vw;
+}
+
+.card{
+    transition: all .3s;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: 10px 10px 23px 0px rgba(0,0,0,0.64);
+-webkit-box-shadow: 10px 10px 23px 0px rgba(0,0,0,0.64);
+-moz-box-shadow: 10px 10px 23px 0px rgba(0,0,0,0.64);
+}
+
+
+
+/* OPINIONES */
+
+.primera-opinion{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 50px 0 50px 50px;
+    width: 70vw;
+    border-bottom: 1px solid black;
+}
+
+.texto-opinion{
+    text-align: start;
+    padding-left: 20px;
+}
+
+.foto-opinion{
+    border-radius: 50%;
+}
+
+.segunda-opinion{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+    align-items: center;
+    padding: 50px 50px 50px 0px;
+    width: 70vw;
+    margin-left: 25vw;
+}
+
+.texto-segunda-opinion{
+    text-align: end ;
+    padding-right: 20px;
+}

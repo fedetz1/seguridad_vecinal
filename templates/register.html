@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="shortcut icon" href="../static/img/logo2.png"/>
+    <link rel="stylesheet" href="../static/css/register.css">
+    <link href="../static/fontawesome/css/all.min.css" rel="stylesheet" />
+    <link href="../static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary nav">
+            <div class="container-fluid cont-nav">
+              <a class="navbar-brand" href="/views/login.html"><img src="../static/img/logo.png" alt="" class="logo"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse contenedor-nav" id="navbarNav">
+                <ul class="navbar-nav lista-desordenada">
+                  <li class="nav-item">
+                    <a class="nav-link" href="/views/login.html">Iniciar sesion</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="/views/register.html">Pedir nuestros servicios</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    
+    <main>
+      <div class="contenedor-contacto" id="contacto">
+        <h2 class="titulo-contacto">Contacto</h2>
+        <div class="contacto">
+            <div class="icono"><i class="fas fa-user"></i></div>
+            <form action="" class="formulario">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre">
+
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" id="apellido">
+
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email">
+
+                <label for="telefono">Numero de telefono</label>
+                <input type="number" name="telefono" id="telefono" placeholder="">
+
+                <label for="consulta">Consulta</label>
+                <textarea name="consulta" id="consulta"></textarea>
+
+              </form>
+              <button type="submit" class="btn btn-primary enviar-form" onclick="funcion()">Enviar</button>
+        </div>
+    </div>
+
+
+    <div class="form-enviado" id="enviado">
+      <div class="contenedor-texto">
+        <i class="fas fa-check"></i>
+        <h1>Gracias por comunicarse con nosotros, los datos han sido enviados con exito</h1>
+        <p>Pronto nos comunicaremos con usted</p>
+      </div>
+    </div>
+    </main>
+
+    
+
+    <footer>
+        <p>© Copyright - Derechos reservados</p>
+    </footer>
+
+    <script src="../static/js/register.js"></script>
+    <script src="../static/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
